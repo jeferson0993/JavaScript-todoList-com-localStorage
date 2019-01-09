@@ -13,3 +13,13 @@ function inserir() {
       inserir()
     }
   }
+
+  function selecinoarTudo() {
+    for (var i = 0; i < contaItems; i++) {
+      if (document.getElementById('selecionaTudo').checked == true) {
+        document.getElementById('checkbox' + i).checked = true
+      } else {
+        document.getElementById('checkbox' + i).checked = false
+      }
+    }
+  }
