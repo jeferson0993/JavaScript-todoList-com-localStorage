@@ -29,8 +29,28 @@ function inserir() {
     for (var i = 0, max = todasAsDivs.length; i < max; i++) {
       todasAsDivs[i].id = 'item' + i
       todasAsDivs[i].firstChild.id = 'checkbox' + i
-      console.log('novo id da div: ' + todasAsDivs[i].id)
-      console.log('novo id da checkbox: ' + todasAsDivs[i].firstChild.id)
-      console.log(todasAsDivs[i])
     }
+  }
+
+  function removerDiv(idCheckbox) {
+    var divContainer = document.getElementById(idCheckbox).parentNode
+    divContainer.remove()
+    contaItemRemovido++
+  }
+  
+  function excluir() {
+    document.getElementById('selecionaTudo').checked = false
+    var itemParaExcluir
+    for (let i = 0; i <= contaItems; i++) {
+      itemParaExcluir = document.getElementById('item' + i)
+      if (itemParaExcluir != null || itemParaExcluir == '') {
+        if (document.getElementById('checkbox' + i).checked == true) {
+          removerDiv('checkbox' + i)
+        }
+      }
+    }
+  
+    contaItems -= contaItemRemovido
+    contaItemRemovido = 0
+    atualizaTudo()
   }
