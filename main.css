@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;  
+  }
+  body {
+    font-size: 1.3em;
+  }
+  header{
+    height: 20vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  header p {
+    color: #777;
+    font-size: 1.3em;
+  }
+  main {
+    min-height: 70vh;
+    padding: 1%;
+  }
+  main form {  
+    height: 10%;  
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 1%;
+  }
+  main form input[type=text] {
+    width: 100%;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;  
+    font-size: 1.3em;
+    color: #777;
+    border: 1px #e7e7e7 solid;
+  }
+  main form input[type=button] {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 5px;
+    background-color: #e7e7e7; 
+    color: black;
+    border: 1px #e7e7e7 solid;
+  }
+  main #areaBotoes {
+    height: 5ch;  
+    padding: 2%;  
+    display: flex;  
+    align-items: center;
+    justify-content: space-around;
+  }
+  main #areaBotoes input[type=button] {  
+    width: 14%;
+    height: 60%;
+    border-radius: 8px;   
+  }
+  #urgente {
+    background-color: indianred;  
+    color: #fff;
+    border: none; 
+  }
+  #importante {
+    background-color: goldenrod;
+    color: #fff;  
+    border: none; 
+  }
+  .normal {
+    background-color: #f7f7f7;
+    border: 1px solid #e7e7e7;
+    color: #000;
+  }
+  #feito {
+    background-color: seagreen;
+    color: #fff;
+    border: none; 
+  }
+  main #areaSelecaoParaExclusao {
+    height: 5ch;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+  }
+  main #areaSelecaoParaExclusao p b {
+    margin-left: 10px;  
+  }
+  main #areaSelecaoParaExclusao input[type=button] {
+    height: 60%;
+    width: 14%;
+    border-radius: 8px;
+  }
+  main #areaLista {
+    padding: 1%;
+  }
+  main #areaLista div {
+    display: flex;
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 1%;
+    margin-bottom: 1%;
+  }
+  main #areaLista div p {
+    margin-left: 3%;
+  }
+  footer {
+    height: 10vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+  }
