@@ -23,3 +23,14 @@ function inserir() {
       }
     }
   }
+
+  function atualizaTudo() {
+    var todasAsDivs = document.getElementsByName("itemDiv");
+    for (var i = 0, max = todasAsDivs.length; i < max; i++) {
+      todasAsDivs[i].id = 'item' + i
+      todasAsDivs[i].firstChild.id = 'checkbox' + i
+      console.log('novo id da div: ' + todasAsDivs[i].id)
+      console.log('novo id da checkbox: ' + todasAsDivs[i].firstChild.id)
+      console.log(todasAsDivs[i])
+    }
+  }
