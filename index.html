@@ -6,26 +6,23 @@
   <title>Javascript CRUD App</title>
   <meta name="view-port" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="main.css">
-  <script src="main.js"></script>
 </head>
 
 <body>
-
   <header>
     <h1>lista de tarefas / Conteúdo de estudos</h1>
     <p>por jeferson ferreira</p>
   </header>
-
   <main>
     <form>
       <input type="text" id="conteudo" />
       <input type="button" onclick="inserir()" value="ADICIONAR" />
     </form>
     <section id="areaBotoes">
-      <input type="button" onclick="" value="Urgente" id="urgente"/>
-      <input type="button" onclick="" value="Importante" id="importante"/>
-      <input type="button" onclick="" value="Normal" class="normal"/>
-      <input type="button" onclick="" value="Feito" id="feito"/>
+      <input type="button" onclick="urgente()" value="Urgente" id="urgente"/>
+      <input type="button" onclick="importante()" value="Importante" id="importante"/>
+      <input type="button" onclick="normal()" value="Normal" class="normal"/>
+      <input type="button" onclick="feito()" value="Feito" id="feito"/>
     </section>
     <section id="areaSelecaoParaExclusao">
       <p>
@@ -37,12 +34,10 @@
     <section id="areaLista">
     </section>
   </main>
-  
   <footer>
     <p>Todos os direitos reservados @ <a href="https://github.com/jeferson0993">jeferson ferreira</a> - Palmas/TO -
       2019</p>
   </footer>
-
 </body>
-
+<script src="main.js"></script>
 </html>
