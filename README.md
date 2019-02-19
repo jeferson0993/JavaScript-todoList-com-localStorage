@@ -13,7 +13,7 @@ Um aplicativo básico sem estrutura JS para exibir uma lista simples de coisas p
 * [Codepen](https://codepen.io/jeferson0993/full/gZvmeb)
 * [linkedin](https://www.linkedin.com/in/jeferson-ferreira-4a036b143)
 * [Portifolio](http://www.jeferson.ml)
-* jeferson0993@gmail.com
+* jeferson@ferreirasilva.ml
 
 ### License - licença
 
